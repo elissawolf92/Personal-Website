@@ -3,7 +3,12 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route('/')
+
+@app.route('/', methods=["GET"])
+def land():
+    return render_template('landing.html')
+
+@app.route('/helloworld')
 def hello():
     return 'Hello World!'
 
