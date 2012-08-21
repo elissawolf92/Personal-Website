@@ -1,10 +1,11 @@
 import os
 from flask import Flask
+from flask import request, render_template, redirect, send_from_directory
 
 app = Flask(__name__)
 
 
-@app.route('/', methods=["GET"])
+@app.route('/')
 def land():
     return render_template('landing.html')
 
