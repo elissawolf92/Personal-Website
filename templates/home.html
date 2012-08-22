@@ -1,8 +1,8 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <link rel="stylesheet" type="text/css" href="style.css" />
-	<script type="text/javascript" href="jquery.js"></script>
+        <script src="{{ url_for('lib', filename='jquery.js') }}"></script>
+        <style type="text/css" src="{{ url_for('static', filename='home.css') }}"></style>
     </head>
     <body>
         <div id="header">
