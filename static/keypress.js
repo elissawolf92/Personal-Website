@@ -1,10 +1,9 @@
 $(document).ready(function() {
     var entered = false;
-    alert('ready');
     
     $(document).keypress(function(e) {
-        alert('in keypress');
         var key = e.which;
+        alert(key);
         if (key == 32) {
         //space
             if (!entered) { 
