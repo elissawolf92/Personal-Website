@@ -22,6 +22,8 @@ $(document).ready(function() {
         // 'd'
             window.location = '/skills';
         }
+        
+        $(content).slideDown("slow");
 
     });
 
