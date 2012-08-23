@@ -28,20 +28,20 @@ body
 	font-family: "Helvetica Neue", Helvetica, sans-serif;
 }
 
-#header ul 
+.header ul 
 {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
 
-#header ul li 
+.header ul li 
 {
 	float: left;
 	text-align: left;
 }
 
-#header ul li a
+.header ul li a
 {
 	display: block;
 	color: #ffff66;
@@ -50,7 +50,7 @@ body
 	margin-right: 20px;
 }
 
-#header ul li a:hover
+.header ul li a:hover
 {
 	text-decoration: underline;
 	color: #ffcc66;
