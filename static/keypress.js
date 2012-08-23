@@ -12,7 +12,7 @@ $(document).ready(function() {
                 window.location('/bio');
             }
         }
-        if (key == 97) {
+        else if (key == 97) {
         // 'a'
             //$.get("/bio");
             window.location('bio');
