@@ -1,3 +1,11 @@
+/* Fonts */
+
+@font-face {
+	font-family: "8 Bit";
+	src: url("bitfont.ttf");
+}
+
+
 body 
 {
 	margin: 0;
