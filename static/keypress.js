@@ -9,13 +9,13 @@ $(document).ready(function() {
             if (!entered) { 
                 entered = true;
                 //$.get("/bio");
-                window.location('/bio');
+                window.location = '/bio';
             }
         }
         else if (key == 97) {
         // 'a'
             //$.get("/bio");
-            window.location('bio');
+            window.location = 'bio';
         }
 
     });
