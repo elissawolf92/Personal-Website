@@ -8,12 +8,14 @@ $(document).ready(function() {
         //space
             if (!entered) { 
                 entered = true;
-                $.get("/bio");
+                //$.get("/bio");
+                window.location('/bio');
             }
         }
         if (key == 97) {
         // 'a'
-            $.get("/bio");
+            //$.get("/bio");
+            window.location('bio');
         }
 
     });
