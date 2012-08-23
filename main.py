@@ -17,6 +17,18 @@ def bio():
 def portfolio():
     return render_template('portfolio.html')
 
+@app.route('/drawing')
+def drawing():
+    return render_template('portfolio_content.html')
+
+@app.route('/painting')
+def painting():
+    return render_template('portfolio_content.html')
+
+@app.route('/modeling')
+def modeling():
+    return render_template('portfolio_content.html')
+
 @app.route('/skills')
 def skills():
     return render_template('skills.html')
