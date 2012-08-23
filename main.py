@@ -13,6 +13,15 @@ def welcome():
 def bio():
     return render_template('bio.html')
 
+@app.route('/portfolio')
+def portfolio():
+    return render_template('portfolio.html')
+
+@app.route('/skills')
+def skills():
+    return render_template('skills.html')
+
+
 if __name__ == '__main__':
     # Bind to PORT if defined, otherwise default to 5000.
     port = int(os.environ.get('PORT', 5000))
