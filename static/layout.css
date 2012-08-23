@@ -70,13 +70,6 @@ body
 	width: 200px;
 }
 
-#bio		{ background: #15add1; }
-#bio h2 	{ background: #007aa5; }
-#portfolio	{ background: #fdc700; }
-#portfolio h2	{ background: #bd9200; }
-#skills 	{ background: #f80083; }
-#skills h2	{ background: #af005e; }
-
 /* Self-Clearing Rules 
 -------------------------------------------------- */
 
