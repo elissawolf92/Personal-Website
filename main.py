@@ -6,8 +6,8 @@ app = Flask(__name__)
 
 
 @app.route('/')
-def land():
-    return render_template('home.html')
+def welcome():
+    return render_template('welcome.html')
 
 @app.route('/bio')
 def bio():

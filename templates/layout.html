@@ -5,6 +5,7 @@
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='layout.css') }}" />
     </head>
     <body>
+       {% block header %}
        <div id="header">
             <ul id="navigation">
                 <li><a href="#bio">Bio</a></li>
@@ -12,6 +13,7 @@
                 <li><a href="#skills">Skills</a></li>
             </ul>
         </div>
+        {% endblock %}
         <div id="content" class="container">
         {% block content %} {% endblock %}    
         </div>
