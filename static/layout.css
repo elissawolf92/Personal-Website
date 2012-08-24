@@ -5,19 +5,30 @@
 	src: url("bitfont.ttf");
 }
 
+@font-face {
+	font-family: "Small Bit";
+	src: url("smallbitfont.ttf");
+}
 
 body 
 {
 	margin: 0;
 	padding: 0;
-	font-family: "Lucida Grande", "Lucida Sans", sans-serif;
+	font-family: "Small Bit", sans-serif;
 	font-size: 100%;
-	background: #333;
+	background: #333300;
 }
 
 
 /* Header
 -------------------------------------------------- */
+
+#elissa-wolf
+{
+	font-family: "8 Bit";
+	font-size: 1.25em;
+	padding: 10px;
+}
 
 .header
 {
@@ -25,7 +36,7 @@ body
 	margin: 0 auto;
         padding: 10px;
 	font-size: .75em;
-	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-family: "Small Bit", sans-serif;
 }
 
 .header ul 

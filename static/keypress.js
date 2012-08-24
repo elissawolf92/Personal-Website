@@ -23,7 +23,7 @@ $(document).ready(function() {
             window.location = '/skills';
         }
         
-        $(content).slideDown("slow");
+        $(#content).slideDown("slow");
 
     });
 
