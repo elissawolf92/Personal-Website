@@ -1,4 +1,6 @@
 import os
+import artlist
+
 from flask import Flask
 from flask import request, render_template, redirect, send_from_directory
 
@@ -19,7 +21,7 @@ def portfolio():
 
 @app.route('/drawing')
 def drawing():
-    return render_template('portfolio_content.html')
+    return render_template('portfolio_content.html', pieces=artlist.drawings)
 
 @app.route('/painting')
 def painting():
@@ -33,6 +35,9 @@ def modeling():
 def skills():
     return render_template('skills.html')
 
+@app.route("/art/<path:filename>")
+def arts(filename):
+	return send_from_directory('art', filename)
 
 if __name__ == '__main__':
     # Bind to PORT if defined, otherwise default to 5000.

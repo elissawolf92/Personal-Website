@@ -1,5 +1,9 @@
 {% extends "portfolio.html" %}
 
 {% block portfolio_content %}
-Content goes here...
+
+{% for image in pieces %}
+{{ image }}
+{% endfor %}
+
 {% endblock %}
