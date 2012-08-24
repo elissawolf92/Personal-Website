@@ -1,7 +1,7 @@
 #content
 {
 	font-family: "Small Bit";
-	vertical-align: middle;
+	position: relative;
 	text-align: center;
 	text-decoration: blink;
 }
@@ -10,9 +10,17 @@
 {
 	color: #00CCCC
 	border: 5pc double #FFCCCC
+	position: absolute;
+	top: 33%;
+	height: 10em;
+	margin-top: -5em;
 }
 
 #press-space
 {
 	color: #FFCCCC
+	position:absolute;
+	top: 66%
+	height: 10em;
+	margin-top: -5em;
 }

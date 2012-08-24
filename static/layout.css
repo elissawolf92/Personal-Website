@@ -38,6 +38,7 @@ body
         padding: 10px;
 	font-size: .75em;
 	font-family: "Small Bit";
+	vertical-align: text-bottom;
 }
 
 .header ul 
