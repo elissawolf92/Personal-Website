@@ -12,6 +12,8 @@
 	border: 5px double #FFCCCC;
 	position: absolute;
 	top: 30%;
+	margin-left: auto;
+	margin-right: auto;
 	width: 500px;
 	font-family: "8 Bit";
 	font-size: 2em;
