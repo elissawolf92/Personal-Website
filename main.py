@@ -25,11 +25,11 @@ def drawing():
 
 @app.route('/painting')
 def painting():
-    return render_template('portfolio_content.html')
+    return render_template('portfolio_content.html', pieces=artlist.paintings)
 
 @app.route('/modeling')
 def modeling():
-    return render_template('portfolio_content.html')
+    return render_template('portfolio_content.html', pieces=artlist.digital)
 
 @app.route('/skills')
 def skills():

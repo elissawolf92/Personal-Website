@@ -8,3 +8,20 @@
 	font-family:"8 Bit";
 	text-align: center;
 }
+
+.thumbnail
+{
+	margin: 2px;
+	border: 5px ridge #CC9966;
+	float: left;
+}
+
+.thumbnail img
+{
+	margin: 2px;
+}
+
+.thumbnail a:hover img
+{
+	border:1px solid #ffffff;
+}
