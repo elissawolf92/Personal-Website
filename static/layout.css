@@ -14,9 +14,9 @@ body
 {
 	margin: 0;
 	padding: 0;
-	font-family: "Small Bit", sans-serif;
+	font-family: "Small Bit"
 	font-size: 100%;
-	background: #333300;
+	background: #003300;
 }
 
 
@@ -36,7 +36,7 @@ body
 	margin: 0 auto;
         padding: 10px;
 	font-size: .75em;
-	font-family: "Small Bit", sans-serif;
+	font-family: "Small Bit"
 }
 
 .header ul 
