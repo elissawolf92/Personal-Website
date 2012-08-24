@@ -8,8 +8,8 @@
 
 #elissa-wolf-title
 {
-	color: #00CCCC
-	border: 5pc double #FFCCCC
+	color: #00CCCC;
+	border: 5pc double #FFCCCC;
 	position: absolute;
 	top: 33%;
 	height: 10em;
@@ -18,9 +18,9 @@
 
 #press-space
 {
-	color: #FFCCCC
+	color: #FFCCCC;
 	position:absolute;
-	top: 66%
+	top: 66%;
 	height: 10em;
 	margin-top: -5em;
 }
