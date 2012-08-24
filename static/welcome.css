@@ -5,6 +5,16 @@
 	text-align: center;
 }
 
+.header
+{
+	visibility:hidden;
+}
+
+#elissa-wolf
+{
+	visibility:hidden;
+}
+
 #elissa-wolf-title
 {
 	color: #00CCCC;
