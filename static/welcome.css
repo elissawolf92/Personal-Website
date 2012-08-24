@@ -11,10 +11,8 @@
 	color: #00CCCC;
 	border: 5px double #FFCCCC;
 	position: absolute;
-	top: 33%;
-	height: 10em;
+	top: 30%;
 	width: 500px;
-	margin-top: -5em;
 	font-family: "8 Bit";
 	font-size: 2em;
 	text-align: center;
@@ -25,7 +23,5 @@
 	color: #FFCCCC;
 	position:absolute;
 	top: 66%;
-	height: 10em;
-	margin-top: -5em;
 	text-align: center;
 }
