@@ -11,9 +11,10 @@
 
 .thumbnail
 {
-	margin: 2px;
+	margin: 10px;
 	border: 5px ridge #CC9966;
 	float: left;
+	height: 76px;
 }
 
 .thumbnail img
