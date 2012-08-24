@@ -16,7 +16,7 @@ body
 	padding: 0;
 	font-family: "Small Bit";
 	font-size: 100%;
-	background: #330033;
+	background: #000033;
 }
 
 
@@ -26,14 +26,14 @@ body
 #elissa-wolf
 {
 	font-family: "8 Bit";
-	font-size: 1.25em;
+	font-size: 1.5em;
 	padding: 10px;
 	color: #FFCC99;
 }
 
 .header
 {
-	width: 460px;
+	width: 600px;
 	margin: 0 auto;
         padding: 10px;
 	font-size: .75em;
