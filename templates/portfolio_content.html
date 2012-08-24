@@ -2,8 +2,12 @@
 
 {% block portfolio_content %}
 
-{% for image in pieces %}
-{{ image }}
+{% for thumb in pieces.keys()  %}
+<div id={{thumb}} class="thumbnail">
+    <a href= {{ pieces[thumb] }}>
+        <img src = {{thumb}}></img>
+    </a>
+</div>
 {% endfor %}
 
 {% endblock %}
