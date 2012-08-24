@@ -3,7 +3,7 @@
 	font-family: "Small Bit";
 	position: relative;
 	text-align: center;
-	text-decoration: blink;
+	border:double;
 }
 
 #elissa-wolf-title
@@ -12,8 +12,7 @@
 	border: 5px double #FFCCCC;
 	position: absolute;
 	top: 30%;
-	margin-left: auto;
-	margin-right: auto;
+	right: 15.5%;
 	width: 500px;
 	font-family: "8 Bit";
 	font-size: 2em;
@@ -25,5 +24,6 @@
 	color: #FFCCCC;
 	position:absolute;
 	top: 66%;
+	right: 34%;
 	text-align: center;
 }
