@@ -3,16 +3,9 @@
 {% block portfolio_content %}
 
 {% for thumb in pieces.keys()  %}
-<script type="text/javascript">
-// Popup window code
-function newPopup(url) {
-	popupWindow = window.open(
-		url,'popUpWindow','height=700,width=800,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes')
-}
-</script>
 
 <div id={{thumb}} class="thumbnail">
-    <a href= "JavaScript:newPopup({{ pieces[thumb] }})">
+    <a href= {{ pieces[thumb] }}>
         <img src = {{thumb}}></img>
     </a>
 </div>
