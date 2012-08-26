@@ -22,13 +22,13 @@ $(document).ready(function() {
         }
         else if (key == 122) {
         // z
-        	if (window.location.contains('portfolio')) {
+        	if (/location/.test(self.location.href) {
         		window.location = '/drawing';
         	}
         }
         else if (key == 120) {
         // x
-        	if (window.location.contains('portfolio')) {
+        	if (window.location.toString().contains('portfolio')) {
         		window.location = '/painting';
         	}
         }
