@@ -22,7 +22,7 @@ $(document).ready(function() {
         }
         else if (key == 122) {
         // z
-        	if (/location/.test(self.location.href) {
+        	if (/location/.test(self.location.href)) {
         		window.location = '/drawing';
         	}
         }
