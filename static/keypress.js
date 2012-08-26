@@ -28,13 +28,13 @@ $(document).ready(function() {
         }
         else if (key == 120) {
         // x
-        	if (/portfolio/.test(self.location.href)) {
+        	if (/portfolio/.test(window.location.href)) {
         		window.location = '/painting';
         	}
         }
         else if (key == 99) {
         // c
-        	if (window.location.href.indexOf('portfolio') != -1) {
+        	if (/portfolio/.test(window.location.href)) {
         		window.location = 'modeling';
         	}
         }
