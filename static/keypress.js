@@ -1,12 +1,10 @@
 $(document).ready(function() {
-    var entered = false;
     
     $(document).keypress(function(e) {
         var key = e.which;
         if (key == 32) {
         //space
-            if (!entered) { 
-                entered = true;
+            if (window.location == '/welcome') { 
                 window.location = '/bio';
             }
         }
@@ -21,6 +19,24 @@ $(document).ready(function() {
         else if (key == 100) {
         // 'd'
             window.location = '/skills';
+        }
+        else if (key == 122) {
+        // z
+        	if (window.location == '/portfolio' {
+        		window.location = '/drawing';
+        	}
+        }
+        else if (key == 120) {
+        // x
+        	if (window.location == '/portfolio' {
+        		window.location = '/painting';
+        	}
+        }
+        else if (key == 99) {
+        // c
+        	if (window.location == '/portfolio' {
+        		window.location = 'modeling';
+        	}
         }
         
         $("#content").slideDown("slow");
