@@ -4,9 +4,9 @@ $(document).ready(function() {
         var key = e.which;
         if (key == 32) {
         //space
-            if (window.location == '') { 
+            //if (window.location == '') { 
                 window.location = '/bio';
-            }
+            //}
         }
         else if (key == 119) {
         // 'w'
@@ -22,19 +22,19 @@ $(document).ready(function() {
         }
         else if (key == 122) {
         // z
-        	if (window.location == '/portfolio') {
+        	if (window.location.contains('portfolio')) {
         		window.location = '/drawing';
         	}
         }
         else if (key == 120) {
         // x
-        	if (window.location == '/portfolio') {
+        	if (window.location.contains('portfolio')) {
         		window.location = '/painting';
         	}
         }
         else if (key == 99) {
         // c
-        	if (window.location == '/portfolio') {
+        	if (window.location.contains('portfolio')) {
         		window.location = 'modeling';
         	}
         }
