@@ -4,7 +4,7 @@ $(document).ready(function() {
         var key = e.which;
         if (key == 32) {
         //space
-            if (window.location == '/welcome') { 
+            if (window.location == '/') { 
                 window.location = '/bio';
             }
         }
