@@ -23,19 +23,19 @@ $(document).ready(function() {
         else if (key == 122) {
         // z
         	if (/portfolio/.test(window.location.href)) {
-        		window.location = '/drawing';
+        		window.location = '/portfolio/drawing';
         	}
         }
         else if (key == 120) {
         // x
         	if (/portfolio/.test(window.location.href)) {
-        		window.location = '/painting';
+        		window.location = '/portfolio/painting';
         	}
         }
         else if (key == 99) {
         // c
         	if (/portfolio/.test(window.location.href)) {
-        		window.location = 'modeling';
+        		window.location = '/portfolio/modeling';
         	}
         }
         
