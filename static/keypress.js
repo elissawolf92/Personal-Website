@@ -2,10 +2,20 @@ $(document).ready(function() {
     
     $(document).keypress(function(e) {
         var key = e.which;
+        
+        var bio = {'url': '/bio',
+                	'next': portfolio};
+                	
+        var portfolio = {'url': '/portfolio',
+        				  'next': skills};
+        				  
+        var skills = {'url': '/skills',
+                      'next': bio};
+        
         if (key == 32) {
         //space
             //if (window.location == '') { 
-                window.location = '/bio';
+                window.location = bio.url;
             //}
         }
         else if (key == 119) {
@@ -20,7 +30,8 @@ $(document).ready(function() {
         // 'd'
             window.location = '/skills';
         }
-        else if (key == 122) {
+        
+        /*else if (key == 122) {
         // z
         	if (/portfolio/.test(window.location.href)) {
         		window.location = '/portfolio/drawing';
@@ -37,7 +48,7 @@ $(document).ready(function() {
         	if (/portfolio/.test(window.location.href)) {
         		window.location = '/portfolio/modeling';
         	}
-        }
+        }*/
         
         $("#content").slideDown("slow");
 
