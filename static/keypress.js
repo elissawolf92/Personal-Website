@@ -22,46 +22,10 @@ var getPageFromUrl = function(url) {
 };
 
 $(document).ready(function() {
-
-	/*var current;
-	
-	this.prototype.bio = {'url': '/bio',
-               'next': portfolio,
-               'prev': skills};
-                	
-    this.prototype.portfolio = {'url': '/portfolio',
-        			'next': skills,
-        			'prev': bio};
-        				  
-	this.prototype.skills = {'url': '/skills',
-              	  'next': bio,
-              	  'prev': portfolio};
-              	  
-    this.prototype.getPageFromUrl = function(url) {
-    	if (/bio/.test(url))
-    		return bio;
-    	else if (/portfolio/.test(url))
-    		return portfolio;
-    	else if (/skills/.test(url))
-    		return skills;
-    };*/
     
     $(document).keydown(function(e) {
         var key = e.which;
         var page = getPageFromUrl(window.location.href);
-        alert(page);
-        
-        /*var bio = {'url': '/bio',
-                	'next': portfolio,
-                	'prev': skills};
-                	
-        var portfolio = {'url': '/portfolio',
-        				  'next': skills,
-        				  'prev': bio};
-        				  
-        var skills = {'url': '/skills',
-                      'next': bio,
-                      'prev': portfolio};*/
         
         if (key == 32) {
         //space
@@ -73,7 +37,6 @@ $(document).ready(function() {
         else if (key == '37') {
         // left arrow
         	window.location = page.prev;
-        	alert(current);
         	
         }
         else if (key == '39') {
