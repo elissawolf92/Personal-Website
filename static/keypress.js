@@ -9,7 +9,7 @@ $(document).ready(function() {
                 	
         var portfolio = {'url': '/portfolio',
         				  'next': skills,
-        				  'prev' = bio};
+        				  'prev': bio};
         				  
         var skills = {'url': '/skills',
                       'next': bio,
