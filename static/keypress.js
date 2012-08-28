@@ -13,9 +13,19 @@ $(document).ready(function() {
 	var skills = {'url': '/skills',
               	  'next': bio,
               	  'prev': portfolio};
+              	  
+    var getPageFromUrl = function(url) {
+    	if (/bio/.test(url))
+    		return bio;
+    	else if (/portfolio/.test(url))
+    		return portfolio;
+    	else if (/skills/.test(url))
+    		return skills;
+    };
     
     $(document).keydown(function(e) {
         var key = e.which;
+        var page = getPageFromUrl(window.location.href);
         
         /*var bio = {'url': '/bio',
                 	'next': portfolio,
@@ -33,19 +43,16 @@ $(document).ready(function() {
         //space
             //if (window.location == '') { 
                 window.location = bio.url;
-                current = bio;
             //}
         }
         else if (key == '37') {
         // left arrow
-        	current = current.prev;
-        	window.location = current.url;
+        	window.location = page.prev.url;
         	
         }
         else if (key == '39') {
         //right arrow
-        	current = current.next;
-        	window.location = current.url;
+        	window.location = page.next.url;
         }
         
         /* else if (key == 119) {
