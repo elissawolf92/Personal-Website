@@ -1,16 +1,16 @@
 var current;
 	
 this.prototype.bio = {'url': '/bio',
-               'next': portfolio,
-               'prev': skills};
+               'next': '/portfolio',
+               'prev': '/skills'};
                 	
 this.prototype.portfolio = {'url': '/portfolio',
-        			'next': skills,
-        			'prev': bio};
+        			'next': '/skills',
+        			'prev': '/bio'};
         				  
 this.prototype.skills = {'url': '/skills',
-              	  'next': bio,
-              	  'prev': portfolio};
+              	  'next': '/bio',
+              	  'prev': '/portfolio'};
               	  
 this.prototype.getPageFromUrl = function(url) {
     	if (/bio/.test(url))
@@ -23,7 +23,7 @@ this.prototype.getPageFromUrl = function(url) {
 
 $(document).ready(function() {
 
-	var current;
+	/*var current;
 	
 	this.prototype.bio = {'url': '/bio',
                'next': portfolio,
@@ -44,7 +44,7 @@ $(document).ready(function() {
     		return portfolio;
     	else if (/skills/.test(url))
     		return skills;
-    };
+    };*/
     
     $(document).keydown(function(e) {
         var key = e.which;
@@ -72,13 +72,13 @@ $(document).ready(function() {
         }
         else if (key == '37') {
         // left arrow
-        	window.location = page.prev.url;
+        	window.location = page.prev;
         	alert(current);
         	
         }
         else if (key == '39') {
         //right arrow
-        	window.location = page.next.url;
+        	window.location = page.next;
         }
         
         /* else if (key == 119) {
