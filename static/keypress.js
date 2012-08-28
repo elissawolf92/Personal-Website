@@ -1,9 +1,23 @@
 $(document).ready(function() {
+
+	var current;
+	
+	var bio = {'url': '/bio',
+               'next': portfolio,
+               'prev': skills};
+                	
+    var portfolio = {'url': '/portfolio',
+        			'next': skills,
+        			'prev': bio};
+        				  
+	var skills = {'url': '/skills',
+              	  'next': bio,
+              	  'prev': portfolio};
     
     $(document).keydown(function(e) {
         var key = e.which;
         
-        var bio = {'url': '/bio',
+        /*var bio = {'url': '/bio',
                 	'next': portfolio,
                 	'prev': skills};
                 	
@@ -13,9 +27,7 @@ $(document).ready(function() {
         				  
         var skills = {'url': '/skills',
                       'next': bio,
-                      'prev': portfolio};
-                      
-        var current;
+                      'prev': portfolio};*/
         
         if (key == 32) {
         //space
