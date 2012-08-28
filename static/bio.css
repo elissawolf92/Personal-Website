@@ -14,7 +14,17 @@
 	border: 5px solid;
 	padding: 10px;
 	background: #C96;
-	float:left;
+	float: left;
+	margin-right:15px;
 }
 
-.
+#bio
+{
+	float: left;
+	padding: 10px;
+}
+
+.bio-info
+{
+	margin: 0px;
+}
