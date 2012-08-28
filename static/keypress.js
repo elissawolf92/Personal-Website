@@ -1,24 +1,42 @@
 $(document).ready(function() {
     
-    $(document).keypress(function(e) {
+    $(document).keydown(function(e) {
         var key = e.which;
         
         var bio = {'url': '/bio',
-                	'next': portfolio};
+                	'next': portfolio,
+                	'prev': skills};
                 	
         var portfolio = {'url': '/portfolio',
-        				  'next': skills};
+        				  'next': skills,
+        				  'prev' = bio};
         				  
         var skills = {'url': '/skills',
-                      'next': bio};
+                      'next': bio,
+                      'prev': portfolio};
+                      
+        var current;
         
         if (key == 32) {
         //space
             //if (window.location == '') { 
                 window.location = bio.url;
+                current = bio;
             //}
         }
-        else if (key == 119) {
+        else if (key == '37') {
+        // left arrow
+        	current = current.prev;
+        	window.location = current.url;
+        	
+        }
+        else if (key == '39') {
+        //right arrow
+        	current = current.next;
+        	window.location = current.url;
+        }
+        
+        /* else if (key == 119) {
         // 'w'
             window.location = '/bio';
         }
