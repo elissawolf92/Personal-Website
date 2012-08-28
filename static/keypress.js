@@ -1,18 +1,18 @@
 var current;
 	
-this.prototype.bio = {'url': '/bio',
+var bio = {'url': '/bio',
                'next': '/portfolio',
                'prev': '/skills'};
                 	
-this.prototype.portfolio = {'url': '/portfolio',
+var portfolio = {'url': '/portfolio',
         			'next': '/skills',
         			'prev': '/bio'};
         				  
-this.prototype.skills = {'url': '/skills',
+var skills = {'url': '/skills',
               	  'next': '/bio',
               	  'prev': '/portfolio'};
               	  
-this.prototype.getPageFromUrl = function(url) {
+var getPageFromUrl = function(url) {
     	if (/bio/.test(url))
     		return bio;
     	else if (/portfolio/.test(url))
