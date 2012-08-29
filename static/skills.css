@@ -15,7 +15,17 @@
 {
 	float:left;
 	width:350px;
-	margin: 10px;
+	margin: 5px;
+}
+
+.skills-table tr
+{
+	margin 5px;
+}
+
+.table-header
+{
+	font-size: 1.25em;
 }
 
 .bar
@@ -23,23 +33,12 @@
 	vertical-align: middle;
 }
 
+.bar img
+{
+	vertical-align:middle;
+}
+
 .data-label
 {
-
-}
-
-.column
-{
-	float:left;
-	width:375px;
-}
-
-.column h2
-{
-	font-size:1em;
-}
-
-.column p
-{
-	font-size:.75em;
+	font-size: 1em;
 }
