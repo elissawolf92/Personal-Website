@@ -11,6 +11,12 @@
 	margin-bottom:15px;
 }
 
+#character
+{
+	float:left;
+	width:210px;
+}
+
 #bit-self
 {
 	border: 5px solid;
