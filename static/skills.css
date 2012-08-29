@@ -6,4 +6,10 @@
 .column
 {
 	float:left;
+	width:350px;
+}
+
+.column h2
+{
+	font-size:1em;
 }
