@@ -3,10 +3,16 @@
 	background: #1B3A2B;
 }
 
+#skills-header
+{
+	font-family:"8 Bit";
+	text-align: center;
+}
+
 .column
 {
 	float:left;
-	width:350px;
+	width:375px;
 }
 
 .column h2
