@@ -11,6 +11,23 @@
 	margin-bottom:10px;
 }
 
+.skills-table
+{
+	float:left;
+	width:350px;
+	margin: 10px;
+}
+
+.bar
+{
+	vertical-align: middle;
+}
+
+.data-label
+{
+
+}
+
 .column
 {
 	float:left;

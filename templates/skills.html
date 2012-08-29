@@ -28,13 +28,25 @@
 		<th colspan="2">Languages</th>
 	<tr>
 	<tr id="Java" class="languages-table-row">
-		<td>Java</td>
-		<td><img src="{{ url_for('static', filename='bar6.png') }}"></td>
+		<td class="data-label">Java</td>
+		<td class="bar"><img src="{{ url_for('static', filename='bar6.png') }}"></td>
 	<tr>
+	<tr id="C++" class="languages-table-row">
+		<td class="data-label">C++</td>
+		<td class="bar"><img src="{{ url_for('static', filename='bar4.png') }}"></td>
+	</tr>
+	<tr id="Python" class="languages-table-row">
+		<td class="data-label">Python</td>
+		<td class="bar"><img src="{{ url_for('static', filename='bar2.png') }}"></td>
+	</tr>
 </table>
 <table id="tech-table" class="skills-table">
 	<tr id= "languages-header" class="table-header">
 		<th colspan="2">Technologies</th>
+	</tr>
+	<tr id="illustrator" class="tech-table-row">
+		<td class="data-label">Illustrator</td>
+		<td class="bar"><img src="{{ url_for('static', filename='bar4.png') }}"></td>
 	</tr>
 </table>
 {% endblock %}
