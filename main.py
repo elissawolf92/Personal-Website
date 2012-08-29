@@ -38,6 +38,10 @@ def skills():
 @app.route("/art/<path:filename>")
 def arts(filename):
 	return send_from_directory('art', filename)
+	
+@app.route('/resume')
+def resume():
+	return send_from_directory('static', 'Resume_CURRENT.pdf')
 
 if __name__ == '__main__':
     # Bind to PORT if defined, otherwise default to 5000.
