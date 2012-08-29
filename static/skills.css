@@ -21,7 +21,6 @@
 .skills-table tr
 {
 	margin 5px;
-	line-height:3em;
 }
 
 .table-header
@@ -42,4 +41,5 @@
 .data-label
 {
 	font-size: 1em;
+	color: #B3CEE7;
 }
