@@ -1,4 +1,9 @@
 #content
 {
-	background: #99FF99;
+	background: #1B3A2B;
+}
+
+.column
+{
+	float:left;
 }
