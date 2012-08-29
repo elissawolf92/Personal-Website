@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block content %}
-<h1 id="skills-header">Skills</h1>
+<!-- <h1 id="skills-header">Skills</h1>
 <div id="languages-column" class="column">
 	<h2>Languages</h2>
 	<p>Java</p>
@@ -21,5 +21,20 @@
 	<p>Maya</p>
 	<p>Git</p>
 	<p>Eclipse</p>
-</div>
+</div> -->
+
+<table id="languages-table" class="skills-table">
+	<tr id="languages-header" class="table-header">
+		<th colspan="2">Languages</th>
+	<tr>
+	<tr id="Java" class="languages-table-row">
+		<td>Java</td>
+		<td><img src="{{ url_for('static', filename='bar6.png') }}"></td>
+	<tr>
+</table>
+<table id="tech-table" class="skills-table">
+	<tr id= "languages-header" class="table-header">
+		<th colspan="2">Technologies</th>
+	</tr>
+</table>
 {% endblock %}

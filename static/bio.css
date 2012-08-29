@@ -24,6 +24,14 @@
 	background: #C96;
 	float: left;
 	margin-right:15px;
+	margin-bottom:15px;
+}
+
+#hearts
+{
+	text-align:center;
+	background: #F7E3BA;
+	border: solid;
 }
 
 #bio
