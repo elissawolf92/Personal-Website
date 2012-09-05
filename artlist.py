@@ -15,7 +15,8 @@ paintings = {"/art/danthumb.png": "/art/dan.png",
              "/art/gourdthumb.png": "art/gourd.png",
              "/art/perfectionthumb.png": "/art/perfection.png",
              "/art/racecarthumb.png": "/art/racecar.png",
-             "/art/pondthumb.png": "/art/pond.png"}
+             "/art/pondthumb.png": "/art/pond.png",
+             "/art/shotthumb.png": "/art/shot/png"}
              
 digital = {"/art/armadillothumb.png": "/art/armadillo.png",
 		   "/art/farmthumb.png": "/art/farm.png",
