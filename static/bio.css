@@ -43,4 +43,6 @@
 .bio-info
 {
 	margin: 0px;
+	margin-left: 15px;
+	max-width: 450px;
 }
