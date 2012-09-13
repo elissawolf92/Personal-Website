@@ -42,6 +42,17 @@ body
 	vertical-align: text-bottom;
 }
 
+.header ul
+{
+	list-style: none;
+}
+
+.header ul li
+{
+	float: left;
+	width: 30%;
+}
+
 
 
 /* Containers
