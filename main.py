@@ -17,19 +17,19 @@ def bio():
 
 @app.route('/portfolio')
 def portfolio():
-    return render_template('portfolio.html', pieces=artlist.drawings)
+    return render_template('portfolio.html', pieces=artlist.drawings, selected='drawing')
 
 @app.route('/portfolio/drawing')
 def drawing():
-    return render_template('portfolio.html', pieces=artlist.drawings)
+    return render_template('portfolio.html', pieces=artlist.drawings, selected='drawing')
 
 @app.route('/portfolio/painting')
 def painting():
-    return render_template('portfolio.html', pieces=artlist.paintings)
+    return render_template('portfolio.html', pieces=artlist.paintings, selected='painting')
 
 @app.route('/portfolio/modeling')
 def modeling():
-    return render_template('portfolio.html', pieces=artlist.digital)
+    return render_template('portfolio.html', pieces=artlist.digital, selected='digital')
 
 @app.route('/skills')
 def skills():

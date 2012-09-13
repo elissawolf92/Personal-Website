@@ -42,32 +42,6 @@ body
 	vertical-align: text-bottom;
 }
 
-.header ul 
-{
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-.header ul li 
-{
-	float: left;
-	text-align: left;
-}
-
-.header ul li a
-{
-	display: block;
-	color: #ffff66;
-	text-decoration: none;
-	margin-right: 20px;
-}
-
-.header ul li a:hover
-{
-	text-decoration: underline;
-	color: #ffcc66;
-}
 
 
 /* Containers
