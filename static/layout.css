@@ -51,6 +51,12 @@ body
 {
 	float: left;
 	width: 30%;
+	text-align: center;
+}
+
+.header ul li a
+{
+	text-decoration: none;
 }
 
 
