@@ -17,7 +17,7 @@ def bio():
 
 @app.route('/portfolio')
 def portfolio():
-    return render_template('portfolio.html', pieces=artlist.drawings, selected='drawing')
+    return render_template('portfolio.html', pieces=artlist.drawings)
 
 @app.route('/portfolio/drawing')
 def drawing():
