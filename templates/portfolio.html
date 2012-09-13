@@ -9,7 +9,7 @@
 <div id="portfolio-header" class="header">
     <ul id="mediums">
     	<!--{% if selected=='drawing' %} -->
-        	<li id="selected"><a href="/portfolio/drawing">Drawing</a></li>
+        	<li><a href="/portfolio/drawing">Drawing</a></li>
         	<li><a href="/portfolio/painting">Painting</a></li>
         	<li><a href="/portfolio/modeling">3D Modeling</a><li>
         <!-- {% else if selected=='painting' %}
@@ -25,21 +25,19 @@
 </div>
 
 <div id="portfolio-content">
-{% block portfolio_content %}
 
 {% for thumb in pieces.keys()  %}
 
-<div id={{thumb}} class="thumbnail">
-    <a href= {{ pieces[thumb] }}>
-        <img src = {{thumb}}></img>
-    </a>
-</div>
+	<div id={{thumb}} class="thumbnail">
+    	<a href= {{ pieces[thumb] }}>
+        	<img src = {{thumb}}></img>
+    	</a>
+	</div>
 
 {% else %}
-<p>Coming soon!</p>
+	<p>Coming soon!</p>
 {% endfor %}
 
-{% endblock %}
 </div>
 
 {% endblock %}
