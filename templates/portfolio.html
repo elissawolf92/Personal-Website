@@ -16,6 +16,19 @@
 
 <div id="portfolio-content">
 {% block portfolio_content %}
+
+{% for thumb in pieces.keys()  %}
+
+<div id={{thumb}} class="thumbnail">
+    <a href= {{ pieces[thumb] }}>
+        <img src = {{thumb}}></img>
+    </a>
+</div>
+
+{% else %}
+<p>Coming soon!</p>
+{% endfor %}
+
 {% endblock %}
 </div>
 
