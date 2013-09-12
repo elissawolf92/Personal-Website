@@ -83,13 +83,13 @@ body
 
 .container
 {
-	width: 750px;
+	width: 800px;
 	height: 475px;
 	margin: 30px auto;
 	padding: 10px 20px;
 	border: 10px double #FFCC99;
 	color: #FFCC99;
-	font-size: 
+	font-size: 1.25em;
 	line-height: 1.5em;
 }
 
