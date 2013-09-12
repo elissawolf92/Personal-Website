@@ -5,7 +5,7 @@
 
 #bio-header
 {
-	font-family:"8 Bit";
+	font-family:"Small Bit";
 	text-align: center;
 	margin:10px;
 	margin-bottom:30px;
@@ -46,4 +46,5 @@
 {
 	margin: 0px;
 	margin-left: 15px;
+	font-size: 1.0em;
 }
