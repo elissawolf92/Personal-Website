@@ -11,14 +11,26 @@
 	margin-bottom:10px;
 }
 
-.skills-table
+.languages-table
 {
 	float:left;
 	width:350px;
 	margin: 5px;
 }
 
-.skills-table tr
+.tech-table
+{
+	float:right;
+	width:350px;
+	margin: 5px;
+}
+
+.languages-table tr
+{
+	margin 5px;
+}
+
+.tech-table tr
 {
 	margin 5px;
 }
