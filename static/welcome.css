@@ -20,21 +20,22 @@
 	color: #00CCCC;
 	border: 5px double #FFCCCC;
 	padding: 15px;
-	position: absolute;
 	top: 15%;
 	right: 15.5%;
 	width: 500px;
 	font-family: "8 Bit";
 	font-size: 2em;
 	text-align: center;
+	display: inline-block;
+	margin-top: 75px;
 }
 
 #press-space
 {
 	color: #FFCCCC;
-	position:absolute;
 	top: 66%;
 	right: 34%;
 	text-align: center;
-	font-size: 1.25em;
+	font-size: 1.0em;
+	display: inline-block;
 }
