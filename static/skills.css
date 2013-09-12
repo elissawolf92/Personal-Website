@@ -28,6 +28,7 @@
 .languages-table tr
 {
 	margin 5px;
+	line-height: 1cm;
 }
 
 .tech-table tr
