@@ -34,11 +34,13 @@
 .tech-table tr
 {
 	margin 5px;
+	line-height: 1cm;
 }
 
 .table-header
 {
 	font-size: 1.25em;
+	font-family: "Small Bit";
 }
 
 .bar
