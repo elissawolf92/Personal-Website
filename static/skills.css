@@ -16,6 +16,7 @@
 	float:left;
 	width:350px;
 	margin: 5px;
+	margin-bottom: 30px;
 }
 
 .tech-table
@@ -23,6 +24,7 @@
 	float:right;
 	width:350px;
 	margin: 5px;
+	margin-bottom: 30px;
 }
 
 .languages-table tr
