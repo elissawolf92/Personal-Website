@@ -53,6 +53,15 @@ body{
             autoCenter: true
         });
 
+        $(window).bind('keydown', function(e){
+        
+        if (e.keyCode==38)
+            $('#magazine').turn('previous');
+        else if (e.keyCode==40)
+            $('#magazine').turn('next');
+            
+    });
+
     </script>
 
 {% else %}
