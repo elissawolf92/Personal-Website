@@ -1,5 +1,16 @@
 {% extends "layout.html" %}
 
+<style type="text/css">
+#book{
+    width:1152px;
+    height:752px;
+}
+#book .turn-page{
+    background-color:#ccc;
+    background-size:100% 100%;
+}
+</style>
+
 {% block extracss %}
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='portfolio.css') }}" />
 {% endblock %}
