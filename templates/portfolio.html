@@ -2,8 +2,8 @@
 
 <style type="text/css">
 #book{
-    width:1152px;
-    height:752px;
+    width:500px;
+    height:300px;
 }
 #book .turn-page{
     background-color:#ccc;
@@ -22,7 +22,7 @@
         <li><a href="/portfolio/drawing">Drawing</a></li>
         <li><a href="/portfolio/painting">Painting</a></li>
         <li><a href="/portfolio/modeling">3D Modeling</a><li>
-        <li><a href="/portfolio/lloyd">A Visual Journey</a><li>
+        <!-- <li><a href="/portfolio/lloyd">A Visual Journey</a><li> -->
     </ul>
 </div>
 
@@ -52,17 +52,18 @@
                                 turned: function(e, page) {
                                     /*console.log('Current view: ', $(this).turn('view'));*/
                                 }
-                            }
+                            
+
                         });
     });
     
     
     $(window).bind('keydown', function(e){
         
-        if (e.keyCode==37)
-            $('#magazine').turn('previous');
-        else if (e.keyCode==39)
-            $('#magazine').turn('next');
+        if (e.keyCode==38)
+            $('#book').turn('previous');
+        else if (e.keyCode==40)
+            $('#book').turn('next');
             
     });
 
