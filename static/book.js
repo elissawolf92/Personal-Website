@@ -1,4 +1,4 @@
-$("#flipbook").turn({
+$("#book").turn({
     width: 400,
     height: 300,
     display: 'double',
