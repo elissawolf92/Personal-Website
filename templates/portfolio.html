@@ -10,7 +10,9 @@ body{
     height:300px;
 }
 
-#flipbook .turn-page{
+#flipbook .page{
+    width:253px;
+    height:300px;
     background-size:100% 100%;
 }
 
@@ -48,6 +50,8 @@ body{
     <script type="text/javascript">
 
         $("#flipbook").turn({
+            height:300,
+            width:253,
             display: 'double',
             autoCenter: true
         });
