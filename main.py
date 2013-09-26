@@ -13,31 +13,31 @@ def welcome():
 
 @app.route('/bio')
 def bio():
-    return render_template('bio.html')
+    return render_template('bio.html', page='Character Profile')
 
 @app.route('/portfolio')
 def portfolio():
-    return render_template('portfolio.html', pieces=artlist.drawings)
+    return render_template('portfolio.html', pieces=artlist.drawings, page='Portfolio')
 
 @app.route('/portfolio/drawing')
 def drawing():
-    return render_template('portfolio.html', pieces=artlist.drawings, selected='drawing')
+    return render_template('portfolio.html', pieces=artlist.drawings, selected='drawing', page='Portfolio')
 
 @app.route('/portfolio/painting')
 def painting():
-    return render_template('portfolio.html', pieces=artlist.paintings, selected='painting')
+    return render_template('portfolio.html', pieces=artlist.paintings, selected='painting', page='Portfolio')
 
 @app.route('/portfolio/modeling')
 def modeling():
-    return render_template('portfolio.html', pieces=artlist.digital, selected='digital')
+    return render_template('portfolio.html', pieces=artlist.digital, selected='digital', page='Portfolio')
 
 @app.route('/portfolio/lloyd')
 def modeling():
-    return render_template('portfolio.html', pieces=artlist.lloyd, selected='lloyd')
+    return render_template('portfolio.html', pieces=artlist.lloyd, selected='lloyd', page='Portfolio')
 
 @app.route('/skills')
 def skills():
-    return render_template('skills.html')
+    return render_template('skills.html', page='Skills')
 
 @app.route("/art/<path:filename>")
 def arts(filename):

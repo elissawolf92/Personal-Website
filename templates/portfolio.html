@@ -22,6 +22,10 @@ body{
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='portfolio.css') }}" />
 {% endblock %}
 
+{% block header %}
+{{ page }} 
+{% endblock %}
+
 {% block content %}
 <h1 id="inventory-header"> Inventory </h1>
 <div id="portfolio-header" class="header">

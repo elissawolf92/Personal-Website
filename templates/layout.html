@@ -10,15 +10,17 @@
         {% block extracss %} {% endblock %}
     </head>
     <body>
+        <div id="header" class="header">
        {% block header %}
-       <div id="header" class="header">
+       <!-- <div id="header" class="header">
             <ul id="navigation">
                 <li><a href="/bio">PROFILE</a></li>
                 <li><a href="/portfolio">INVENTORY</a></li>
                 <li><a href="/skills">SKILLS</a></li>
             </ul>
-        </div>
+        </div> -->
         {% endblock %}
+        </div>
         <div id="content" class="container">
         {% block content %} {% endblock %}    
         </div>
