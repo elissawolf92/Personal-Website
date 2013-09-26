@@ -31,6 +31,10 @@ def painting():
 def modeling():
     return render_template('portfolio.html', pieces=artlist.digital, selected='digital')
 
+@app.route('/portfolio/lloyd')
+def modeling():
+    return render_template('portfolio.html', pieces=artlist.lloyd, selected='lloyd')
+
 @app.route('/skills')
 def skills():
     return render_template('skills.html')

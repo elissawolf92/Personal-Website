@@ -11,22 +11,39 @@
         <li><a href="/portfolio/drawing">Drawing</a></li>
         <li><a href="/portfolio/painting">Painting</a></li>
         <li><a href="/portfolio/modeling">3D Modeling</a><li>
+        <li><a href="/portfolio/lloyd">A Visual Journey</a><li>
     </ul>
 </div>
 
 <div id="portfolio-content">
 
-{% for thumb in pieces.keys()  %}
+{% if selected == 'lloyd' %}
+    <div id="book">
 
-	<div id={{thumb}} class="thumbnail">
-    	<a href= {{ pieces[thumb] }}>
-        	<img src = {{thumb}}></img>
-    	</a>
-	</div>
+    {% for page in pieces %}
+    <div> 
+        <img src = {{page}}></img>
+    </div>
+
+    {% endfor %}
+
+    </div>
 
 {% else %}
-	<p>Coming soon!</p>
-{% endfor %}
+
+    {% for thumb in pieces.keys()  %}
+
+	   <div id={{thumb}} class="thumbnail">
+    	   <a href= {{ pieces[thumb] }}>
+        	   <img src = {{thumb}}></img>
+    	   </a>
+	   </div>
+
+    {% else %}
+	   <p>Coming soon!</p>
+    {% endfor %}
+
+{% endif %}
 
 </div>
 
