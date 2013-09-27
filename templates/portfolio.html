@@ -59,7 +59,7 @@ body{
             display: 'double',
             autoCenter: false,
             gradients: false,
-            duration: 100,
+            duration: 300,
         });
 
         $(window).bind('keydown', function(e){
@@ -86,6 +86,8 @@ body{
     {% else %}
 	   <p>Coming soon!</p>
     {% endfor %}
+
+    <div id="storymode"> <a href="/portfolio/lloyd">Enter Story Mode</a> </div>
 
 {% endif %}
 
