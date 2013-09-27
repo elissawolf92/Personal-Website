@@ -9,6 +9,13 @@
 	text-align: center;
 }
 
+#portfolio-header
+{
+	font-size: 1.75em;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
 .thumbnail
 {
 	margin: 15px;
@@ -42,7 +49,7 @@
 
 #thumbbox
 {
-	height: 400px;
+	height: 350px;
 	width: 800px;
 }
 
