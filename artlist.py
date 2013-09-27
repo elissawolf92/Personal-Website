@@ -25,6 +25,12 @@ digital = {"/art/armadillothumb.png": "/art/armadillo.png",
 
 lloyd = ["/art/lloyd1.png",
 		 "/art/lloyd2.png",
-		 "/art/lloyd3.png",]
+		 "/art/lloyd3.png",
+		 "/art/lloyd4.png",
+		 "/art/lloyd5.png",
+		 "/art/lloyd6.png",
+		 "/art/lloyd7.png",
+		 "/art/lloyd8.png",
+		 "/art/lloyd9.png",]
 			
 
