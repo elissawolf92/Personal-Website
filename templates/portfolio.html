@@ -57,15 +57,17 @@ body{
             height:425,
             width:716,
             display: 'double',
-            autoCenter: false
+            autoCenter: false,
+            gradients: false,
+            duration: 100,
         });
 
         $(window).bind('keydown', function(e){
         
         if (e.keyCode==38)
-            $('#magazine').turn('previous');
+            $('#flipbook').turn('previous');
         else if (e.keyCode==40)
-            $('#magazine').turn('next');
+            $('#flipbook').turn('next');
             
     });
 
