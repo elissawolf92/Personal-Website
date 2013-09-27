@@ -28,6 +28,8 @@ body{
 
 {% block content %}
 <!-- <h1 id="inventory-header"> Inventory </h1> -->
+{% if selected != 'lloyd' %}
+
 <div id="portfolio-header" class="header">
     <ul id="mediums">
         <li><a href="/portfolio/drawing">Drawing</a></li>
@@ -36,6 +38,8 @@ body{
         <!-- <li><a href="/portfolio/lloyd">A Visual Journey</a><li> -->
     </ul>
 </div>
+
+{% endif %}
 
 <div id="portfolio-content">
 
@@ -75,6 +79,7 @@ body{
 
 {% else %}
 
+    <div id="thumbbox">
     {% for thumb in pieces.keys()  %}
 
 	   <div id={{thumb}} class="thumbnail">
@@ -86,6 +91,7 @@ body{
     {% else %}
 	   <p>Coming soon!</p>
     {% endfor %}
+    </div>
 
     <div id="storymode"> <a href="/portfolio/lloyd">Enter Story Mode</a> </div>
 
