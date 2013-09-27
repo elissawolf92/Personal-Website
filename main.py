@@ -32,7 +32,7 @@ def modeling():
     return render_template('portfolio.html', pieces=artlist.digital, selected='digital', page='Inventory')
 
 @app.route('/portfolio/lloyd')
-def modeling():
+def lloyd():
     return render_template('portfolio.html', pieces=artlist.lloyd, selected='lloyd', page='Inventory')
 
 @app.route('/skills')
