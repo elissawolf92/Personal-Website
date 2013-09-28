@@ -1,5 +1,10 @@
 {% extends "layout.html" %}
 
+{% block extracss %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='portfolio.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='highslide.css') }}" />
+{% endblock %}
+
 <style type="text/css">
 body{
     overflow:hidden;
@@ -18,9 +23,11 @@ body{
 
 </style>
 
-{% block extracss %}
-<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='portfolio.css') }}" />
-{% endblock %}
+<script type="text/javascript">
+    hs.graphicsDir = '../highslide/graphics/';
+    hs.outlineType = 'rounded-white';
+</script>
+
 
 {% block header %}
 <div id="header" class="header"> {{ page }} </div>
@@ -83,8 +90,8 @@ body{
     {% for thumb in pieces.keys()  %}
 
 	   <div id={{thumb}} class="thumbnail">
-    	   <a href= {{ pieces[thumb] }}>
-        	   <img src = {{thumb}}></img>
+    	   <a href= {{ pieces[thumb] }} onclick="return hs.expand(this)">
+        	   <img src = {{thumb}} alt="Highslide JS"></img>
     	   </a>
 	   </div>
 
