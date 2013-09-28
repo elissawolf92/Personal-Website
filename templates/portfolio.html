@@ -54,15 +54,11 @@ body{
     <div id="flipbook">
 
     {% for page in pieces %}
-    <div> 
-        <img src = {{page}}></img>
-    </div>
+        <div> 
+            <img src = {{page}}></img>
+        </div>
 
     {% endfor %}
-
-    <div id="pagedesc"> Text here </div>
-
-    </div>
 
     <script type="text/javascript">
 
@@ -85,6 +81,10 @@ body{
     });
 
     </script>
+    </div>
+
+    <div id="pagedesc"> Text here </div>
+
 
 {% else %}
 
